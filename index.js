@@ -39,3 +39,14 @@ function fibonancieSeries(n) {
   console.log(seriesValues);
 }
 fibonancieSeries(n);
+
+class Bank {
+  constructor(bankName) {
+    this.bankName = bankName;
+  }
+  speak() {
+    console.log(`The name of this bank ${this.bankName}`);
+  }
+}
+let bank = new Bank("equity");
+bank.speak();
