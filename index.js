@@ -41,12 +41,17 @@ function fibonancieSeries(n) {
 fibonancieSeries(n);
 
 class Bank {
-  constructor(bankName) {
+  constructor(bankName, balance) {
     this.bankName = bankName;
+    this.balance = balance;
   }
   speak() {
     console.log(`The name of this bank ${this.bankName}`);
   }
+  balance() {
+    console.log(`The balance of this ${this.bankName} is Kshs${this.balance}`);
+  }
 }
-let bank = new Bank("equity");
+let bank = new Bank("equity",2000);
 bank.speak();
+bank.balance();
